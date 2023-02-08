@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HttpClientFactory", "HttpClientFactory", "{CD4EE5EC-A5CA-484B-97A6-6E0615170268}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HttpClientFactoryHelper", "HttpClientFactory\HttpClientFactoryHelper\HttpClientFactoryHelper.csproj", "{27CCF08A-B71F-492C-B369-194259ACC2D7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HttpClientFakeAPI", "HttpClientFactory\HttpClientFakeAPI\HttpClientFakeAPI.csproj", "{B404FBD5-507B-4054-B650-72AFC476CB9A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExceptionHandling", "ExceptionHandling", "{7649BF65-DE58-4E8E-ACC1-8501B0088D38}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Enums", "Enums", "{3EEDBC9B-A3DB-4E01-A189-0AF096424049}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SmartEnum", "SmartEnum", "{DA57627A-3B40-4B36-AC56-03C1D3AE1ECF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartEnumExample", "Enums\SmartEnum\SmartEnumExample\SmartEnumExample.csproj", "{3ECA137E-8592-401E-ABAD-67B1AA3D4841}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27CCF08A-B71F-492C-B369-194259ACC2D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27CCF08A-B71F-492C-B369-194259ACC2D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27CCF08A-B71F-492C-B369-194259ACC2D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27CCF08A-B71F-492C-B369-194259ACC2D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B404FBD5-507B-4054-B650-72AFC476CB9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B404FBD5-507B-4054-B650-72AFC476CB9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B404FBD5-507B-4054-B650-72AFC476CB9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B404FBD5-507B-4054-B650-72AFC476CB9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3ECA137E-8592-401E-ABAD-67B1AA3D4841}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3ECA137E-8592-401E-ABAD-67B1AA3D4841}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3ECA137E-8592-401E-ABAD-67B1AA3D4841}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3ECA137E-8592-401E-ABAD-67B1AA3D4841}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{27CCF08A-B71F-492C-B369-194259ACC2D7} = {CD4EE5EC-A5CA-484B-97A6-6E0615170268}
+		{B404FBD5-507B-4054-B650-72AFC476CB9A} = {CD4EE5EC-A5CA-484B-97A6-6E0615170268}
+		{DA57627A-3B40-4B36-AC56-03C1D3AE1ECF} = {3EEDBC9B-A3DB-4E01-A189-0AF096424049}
+		{3ECA137E-8592-401E-ABAD-67B1AA3D4841} = {DA57627A-3B40-4B36-AC56-03C1D3AE1ECF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3983DB6F-089C-42CD-9B9E-7094140EBD88}
+	EndGlobalSection
+EndGlobal
