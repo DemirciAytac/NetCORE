@@ -19,13 +19,21 @@ namespace HttpClientFactoryHelper.Config
                   c.BaseAddress = new Uri(configuration.GetSection("HttpClientFakeAPI").Value);
                   c.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
               })
-               .ConfigurePrimaryHttpMessageHandler(() => new HttpClientHandler())
+               .ConfigurePrimaryHttpMessageHandler(() => new HttpClientHandler
+               {
+                   Proxy = new WebProxy
+                   {
+                       Address = new Uri(configuration.GetSection("RestServiceProxyAddress").Value),
+                       BypassProxyOnLocal = false,
+                       UseDefaultCredentials = false,
+                   }
+               })
                .AddPolicyHandler(GetRetryPolicy());
             #endregion
 
-            /*
 
             // Timeout ve Retry policy
+            /*           
             // requeste 1sn.den fazla cevap gelmezse fail kabul edilir. 2 nin katları şeklinde 5 kez tekrar denenir.
             #region TimeoutAndRetry
             services
@@ -38,6 +46,7 @@ namespace HttpClientFactoryHelper.Config
                 .AddTransientHttpErrorPolicy(b => b.Or<TimeoutRejectedException>().WaitAndRetryAsync(5, c => TimeSpan.FromSeconds(Math.Pow(2, c))))
                 .AddPolicyHandler(Policy.TimeoutAsync<HttpResponseMessage>(1));
             #endregion
+
 
             // CircuitBreaker
             // 3 kez üst üste hata alırsa devreyi kesecek ve 15 saniye bekledikten sonra tekrar istek gönderecek.
