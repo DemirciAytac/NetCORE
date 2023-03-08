@@ -9,13 +9,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HttpClientFactoryHelper", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HttpClientFakeAPI", "HttpClientFactory\HttpClientFakeAPI\HttpClientFakeAPI.csproj", "{B404FBD5-507B-4054-B650-72AFC476CB9A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExceptionHandling", "ExceptionHandling", "{7649BF65-DE58-4E8E-ACC1-8501B0088D38}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Enums", "Enums", "{3EEDBC9B-A3DB-4E01-A189-0AF096424049}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SmartEnum", "SmartEnum", "{DA57627A-3B40-4B36-AC56-03C1D3AE1ECF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartEnumExample", "Enums\SmartEnum\SmartEnumExample\SmartEnumExample.csproj", "{3ECA137E-8592-401E-ABAD-67B1AA3D4841}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ELK", "ELK", "{DD942930-4604-45FF-8320-4BC1BEA944CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ELK-Sample-Project", "ELK\ELK-Sample-Project\ELK-Sample-Project.csproj", "{F4C3821F-2718-4484-A42D-550BEC29D87C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{3ECA137E-8592-401E-ABAD-67B1AA3D4841}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3ECA137E-8592-401E-ABAD-67B1AA3D4841}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3ECA137E-8592-401E-ABAD-67B1AA3D4841}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4C3821F-2718-4484-A42D-550BEC29D87C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4C3821F-2718-4484-A42D-550BEC29D87C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4C3821F-2718-4484-A42D-550BEC29D87C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4C3821F-2718-4484-A42D-550BEC29D87C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +50,7 @@ Global
 		{B404FBD5-507B-4054-B650-72AFC476CB9A} = {CD4EE5EC-A5CA-484B-97A6-6E0615170268}
 		{DA57627A-3B40-4B36-AC56-03C1D3AE1ECF} = {3EEDBC9B-A3DB-4E01-A189-0AF096424049}
 		{3ECA137E-8592-401E-ABAD-67B1AA3D4841} = {DA57627A-3B40-4B36-AC56-03C1D3AE1ECF}
+		{F4C3821F-2718-4484-A42D-550BEC29D87C} = {DD942930-4604-45FF-8320-4BC1BEA944CC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3983DB6F-089C-42CD-9B9E-7094140EBD88}
