@@ -1,3 +1,5 @@
+using ELK_Sample_Project.Interface;
+using ELK_Sample_Project.Service;
 using Serilog;
 
 Log.Logger = new LoggerConfiguration()
@@ -13,6 +15,7 @@ try
     var builder = WebApplication.CreateBuilder(args);
     builder.Services.AddControllers();
     builder.Services.AddEndpointsApiExplorer();
+    builder.Services.AddScoped<IElasticsearchService, ElasticsearchService>();
     builder.Services.AddSwaggerGen();
     builder.Host.UseSerilog((context, configuration) =>
     {
