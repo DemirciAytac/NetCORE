@@ -9,6 +9,7 @@ namespace AutoDependencyInjection.Domain.Entities
         public string? LastName { get; set; }
         public string? Genre { get; set; }
         public Guid BookId { get; set; }
+        // One-to-many relationship with books
         public List<Book> Books { get; set; }
     }
 }
